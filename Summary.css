@@ -1,0 +1,89 @@
+/* Container */
+.summary {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Heading */
+.summary h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #1e293b;
+}
+
+/* Box */
+.box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
+}
+
+/* Summary text */
+.box p {
+  font-size: 15px;
+  color: #334155;
+}
+
+/* Motivation text */
+.motivation {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* Hover effect (subtle) */
+.box:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px) {
+  .summary {
+    margin: 30px 15px;
+  }
+
+  .summary h2 {
+    font-size: 22px;
+  }
+
+  .box {
+    padding: 18px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .summary {
+    margin: 20px 10px;
+    padding: 10px;
+  }
+
+  .summary h2 {
+    font-size: 20px;
+  }
+
+  .box {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .box p {
+    font-size: 13px;
+  }
+
+  .motivation {
+    font-size: 13px;
+  }
+}

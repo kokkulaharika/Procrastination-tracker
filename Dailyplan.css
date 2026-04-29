@@ -1,0 +1,167 @@
+.plan {
+  max-width: 520px;
+  box-shadow: 0 0 10px black;
+  margin: 50px auto;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Headings */
+.plan h2 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.plan h3 {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-box input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  background: #fff;
+}
+
+/* Button */
+.input-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0ea5e9;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.input-box button:hover {
+  background: #0284c7;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+li {
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #0ea5e9;
+}
+
+/* Text */
+li span {
+  font-size: 14px;
+  color: #334155;
+}
+
+/* Delete button */
+li button {
+  background: #f87171;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #ef4444;
+}
+/* ===== Mobile (≤480px) ===== */
+@media (max-width: 480px) {
+  .plan {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .plan h2 {
+    font-size: 20px;
+  }
+
+  .plan h3 {
+    font-size: 13px;
+  }
+
+  .input-box input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .input-box button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  li button {
+    align-self: flex-end;
+  }
+}
+
+/* ===== Tablet (481px – 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .plan {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+
+  .plan h2 {
+    font-size: 24px;
+  }
+
+  .plan h3 {
+    font-size: 14px;
+  }
+
+  li {
+    padding: 10px;
+  }
+}
+
+/* ===== Large screens (≥1024px) ===== */
+@media (min-width: 1024px) {
+  .plan {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  .plan h2 {
+    font-size: 28px;
+  }
+
+  .plan h3 {
+    font-size: 16px;
+  }
+}

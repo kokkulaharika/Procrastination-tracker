@@ -1,0 +1,168 @@
+
+/* Card container */
+.log {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f8fafc;
+  box-shadow: 0 0 10px black;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Headings */
+.log h2 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.log h3 {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Input section */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-box label {
+  font-size: 13px;
+  color: #334155;
+}
+
+/* Inputs */
+.input-box input,
+.input-box select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  background: white;
+}
+
+/* Button */
+.input-box button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #22c55e;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  background: #16a34a;
+}
+
+/* Log list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Each log card */
+li {
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #22c55e;
+}
+
+/* Text */
+li div {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+/* Delete button */
+li button {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #dc2626;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Mobile */
+@media (max-width: 480px) {
+  .log {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .log h2 {
+    font-size: 20px;
+  }
+
+  .log h3 {
+    font-size: 13px;
+  }
+
+  .input-box input,
+  .input-box select {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  li button {
+    align-self: flex-end;
+  }
+}
+
+.insight-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff3cd;
+  border-radius: 10px;
+}
+
+.insight {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #ffeeba;
+  border-left: 4px solid orange;
+  border-radius: 6px;
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .log {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .log {
+    max-width: 650px;
+  }
+}

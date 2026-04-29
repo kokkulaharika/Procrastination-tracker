@@ -1,0 +1,176 @@
+/* Full page background */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* soft gradient background */
+  background: linear-gradient(135deg, #eef2f7, #e3e7ee);
+  padding: 20px;
+}
+
+/* Main heading */
+.login-container h1 {
+  font-size: 39px;
+  margin-bottom: 10px;
+  color: #2f3542;
+}
+
+/* Sub heading */
+.head-2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Paragraphs */
+.login-container p {
+  max-width: 500px;
+  text-align: center;
+  font-size: 14px;
+  color: #080404;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Form box */
+.login-container form {
+  margin-top: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+
+  /* soft shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.login-container form h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2f3542;
+}
+
+/* Input */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Input focus */
+.login-container input:focus {
+  outline: none;
+  border-color: #2f3542;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2f3542;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.login-container button:hover {
+  background: #1e272e;
+}
+
+/* Welcome screen styles */
+.main1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 28px;
+}
+
+.back-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* ===== Mobile (small screens) ===== */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-container h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .head-2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .login-container p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .login-container form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-container input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .login-container button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* ===== Tablet (medium screens) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-container h1 {
+    font-size: 32px;
+  }
+
+  .head-2 {
+    font-size: 24px;
+  }
+
+  .login-container form {
+    width: 350px;
+    padding: 25px;
+  }
+}
+
+/* ===== Large screens ===== */
+@media (min-width: 1024px) {
+  .login-container h1 {
+    font-size: 42px;
+  }
+
+  .head-2 {
+    font-size: 32px;
+  }
+
+  .login-container form {
+    width: 360px;
+  }
+}
